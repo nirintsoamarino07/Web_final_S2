@@ -1,33 +1,38 @@
 V1:
 1) Creation des base de donnees (ok)
-membre (id_membre, nom , date de naissance, genre, émail, ville, mdp, image_profil)
-categorie_objet (id_categorie, nom_categorie )
-objet (id_objet , nom_objet , id_categorie, id_membre)
-images_objet(id_image, id_objet, nom_image)
-emprunt(id_emprunt, id_objet, id_membre, date_emprunt, date_retour) 
+membre (id_membre, nom , date de naissance, genre, émail, ville, mdp, image_profil)(ok)
+categorie_objet (id_categorie, nom_categorie )(ok)
+objet (id_objet , nom_objet , id_categorie, id_membre)(ok)
+images_objet(id_image, id_objet, nom_image)(ok)
+emprunt(id_emprunt, id_objet, id_membre, date_emprunt, date_retour) (ok)
 
 2) Insertion des donnees (ok)
 4 membres
-4 catégories ( esthétique, bricolage, mécanique , cuisine )
-10 objets par membre à répartir sur les catégories
-10 emprunts
+4 catégories ( esthétique, bricolage, mécanique , cuisine )(ok)
+10 objets par membre à répartir sur les catégories(ok)
+10 emprunts(ok)
 
-3) creation fonction
--connection.php(connection a la base)
--fonction.php(login,list_objets)
+3) creation fonction(ok)
+-connection.php(connection a la base)(ok)
+-fonction.php(login,list_objets)(ok)
 
-4) Creation page
--login.php
--inscription
--list_objets.php
--filtre.
+4) Creation page(ok)
+-login.php(ok)
+-inscription(ok)
+-list_objets.php(ok)
+-filtre
 
 V2:
 1) Amelioraton du design maximum
 -css login, inscri, list_objets
-2)Ajout objet 
--met un input ajout objet
+2) Ajout objet 
+-met un input ajout objet(ok)
 -uploader des images  
 -definir le premier image comme image principale
 -afficher une image par défaut si aucune image n’a été envoyée
 -supprimer des images plus tard.
+3) Lorsqu’on clique sur un objet dans la liste, afficher la fiche de l’objet (image principale + autres images) avec l’historique des emprunts(ok)
+-mettre les critères de recherche suivant sur la liste des objets(ok)
+-catégorie (zone de liste)(ok)
+-nom de l’objet (ok)
+-case à cocher disponible(ok)
