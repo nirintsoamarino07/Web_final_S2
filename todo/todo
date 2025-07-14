@@ -1,0 +1,25 @@
+V1:
+1) Creation des base de donnees (ok)
+membre (id_membre, nom , date de naissance, genre, émail, ville, mdp, image_profil)
+categorie_objet (id_categorie, nom_categorie )
+objet (id_objet , nom_objet , id_categorie, id_membre)
+images_objet(id_image, id_objet, nom_image)
+emprunt(id_emprunt, id_objet, id_membre, date_emprunt, date_retour) 
+
+2) Insertion des donnees (ok)
+4 membres
+4 catégories ( esthétique, bricolage, mécanique , cuisine )
+10 objets par membre à répartir sur les catégories
+10 emprunts
+
+3) creation fonction
+-connection.php(connection a la base)
+-fonction.php
+
+4) Creation page
+-login.php met un lien vers inscription.php pour creer un compte et le button se connecter dirige vers la page 
+list des objets
+-inscription.()
+-list_objets.php
+-filtre.php
+ 
