@@ -20,5 +20,14 @@ emprunt(id_emprunt, id_objet, id_membre, date_emprunt, date_retour)
 -login.php
 -inscription
 -list_objets.php
--filtre.php
- 
+-filtre.
+
+V2:
+1) Amelioraton du design maximum
+-css login, inscri, list_objets
+2)Ajout objet 
+-met un input ajout objet
+-uploader des images  
+-definir le premier image comme image principale
+-afficher une image par défaut si aucune image n’a été envoyée
+-supprimer des images plus tard.

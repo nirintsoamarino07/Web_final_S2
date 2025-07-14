@@ -1,5 +1,3 @@
-CREATE DATABASE pret_objets;
-USE pret_objets;
 
 
 CREATE TABLE pret_objetsS2_membre(
@@ -71,7 +69,6 @@ INSERT INTO pret_objetsS2_objet (nom_objet, id_categorie, id_membre) VALUES
 ('Mixeur', 4, 1),
 ('Grille-pain', 4, 1);
 
-
 INSERT INTO pret_objetsS2_objet (nom_objet, id_categorie, id_membre) VALUES
 ('Crème visage', 1, 2),
 ('Rasoir électrique', 1, 2),
@@ -126,3 +123,4 @@ INSERT INTO pret_objetsS2_emprunt (id_objet, id_membre, date_emprunt, date_retou
 INSERT INTO pret_objetsS2_emprunt (id_objet, id_membre, date_emprunt, date_retour) VALUES
 (31, 1, '2025-07-02', NULL),           
 (34, 1, '2025-07-03', '2025-07-10');
+
