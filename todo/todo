@@ -14,12 +14,11 @@ emprunt(id_emprunt, id_objet, id_membre, date_emprunt, date_retour)
 
 3) creation fonction
 -connection.php(connection a la base)
--fonction.php
+-fonction.php(login,list_objets)
 
 4) Creation page
--login.php met un lien vers inscription.php pour creer un compte et le button se connecter dirige vers la page 
-list des objets
--inscription.()
+-login.php
+-inscription
 -list_objets.php
 -filtre.php
  
