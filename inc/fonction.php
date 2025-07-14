@@ -57,6 +57,7 @@ function get_historique_emprunts($id_objet) {
     return mysqli_fetch_all($result, MYSQLI_ASSOC);
 }
 
+
 function search_objets($nom_objet = "", $id_categorie = "", $disponible = false) {
     $conn = dbconnect();
 
@@ -86,6 +87,14 @@ function search_objets($nom_objet = "", $id_categorie = "", $disponible = false)
     $query .= " GROUP BY o.id_objet ORDER BY o.nom_objet ASC";
 
     return mysqli_query($conn, $query);
+}
+
+function get_membre_par_id($id) {
+    $conn = dbconnect();
+    $stmt = $conn->prepare("SELECT * FROM pret_objetsS2_membre WHERE id_membre = ?");
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+    return $stmt->get_result()->fetch_assoc();
 }
 
 

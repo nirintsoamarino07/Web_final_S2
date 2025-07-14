@@ -1,10 +1,10 @@
 <?php
 session_start();
 include('../inc/fonction.php');
-
 $nom_objet = $_GET['nom_objet'] ?? '';
 $id_categorie = $_GET['id_categorie'] ?? '';
 $disponible = isset($_GET['disponible']);
+
 
 $categories = list_categorie();
 $result = search_objets($nom_objet, $id_categorie, $disponible);
@@ -127,11 +127,12 @@ $result = search_objets($nom_objet, $id_categorie, $disponible);
                 <tr>
                     <td>
                         <a href="fiche_objet.php?id=<?= $row['id_objet']; ?>" class="text-decoration-none text-primary fw-bold">
-                            <?= htmlspecialchars($row['nom_objet']); ?>
+                            <?= $row['nom_objet']; ?>
                         </a>
                     </td>
-                    <td><?= htmlspecialchars($row['nom_categorie']); ?></td>
-                    <td><?= htmlspecialchars($row['proprietaire']); ?></td>
+                    <td><?= $row['nom_categorie']; ?></td>
+                    <td><a href="fiche_membre.php">
+                    <?= $row['proprietaire']; ?></a></td>
                     <td>
                         <?php if ($row['date_emprunt'] && is_null($row['date_retour'])): ?>
                             <span class="badge bg-danger">Emprunté</span>
