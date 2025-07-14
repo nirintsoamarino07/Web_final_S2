@@ -38,3 +38,4 @@ if (!$images_uploaded) {
 }
 
 header("Location: list_objets.php");
+

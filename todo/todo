@@ -36,3 +36,9 @@ V2:
 -catégorie (zone de liste)(ok)
 -nom de l’objet (ok)
 -case à cocher disponible(ok)
+
+
+V3 
+Alea cousin 
+Dans lis_objets.php on ajout un button emprinter puis quand on clique dessus on ajoute un champ combien de jour puis valider et il y a dispo le .... date exemple aujourdhuis 14 + 3 donc dispo le  17juillet 
+merci cousin
